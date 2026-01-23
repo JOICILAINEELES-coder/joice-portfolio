@@ -1,0 +1,37 @@
+.ListaMenu {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #dbdbe6 25%, #f3ceda 50%, #dbdbe6 70%);
+  align-items: center;
+  height: 60px;
+}
+
+
+.ListaIcones {
+  font-size: 18px;
+  list-style: none;
+  display: inline-flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0; 
+}
+
+
+.MenuItem {
+  text-decoration: none;
+  color: #b66e80;
+  font-weight: bold;
+  transition: color 0.3s;
+  padding-bottom: 5px; 
+  border-bottom: 2px solid transparent; 
+}
+
+.MenuItem:hover {
+  color: #807d7d;
+}
+
+
+.MenuItem.ativo {
+  color: #378aa1;
+  border-bottom: 2px solid #30a4c4;
+}
