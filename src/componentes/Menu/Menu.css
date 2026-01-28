@@ -1,7 +1,15 @@
+:root {
+  --menu-background: linear-gradient(135deg, #dbdbe6 25%, #f3ceda 50%, #dbdbe6 70%);
+  --menu-item-color: #b66e80;
+  --menu-item-hover-color: #807d7d;
+  --menu-item-active-color: #378aa1;
+  --menu-item-active-border-color: #30a4c4;
+}
+
 .ListaMenu {
   display: flex;
   justify-content: center;
-  background: linear-gradient(135deg, #dbdbe6 25%, #f3ceda 50%, #dbdbe6 70%);
+  background: var(--menu-background);
   align-items: center;
   height: 60px;
 }
@@ -19,7 +27,7 @@
 
 .MenuItem {
   text-decoration: none;
-  color: #b66e80;
+  color: var(--menu-item-color);
   font-weight: bold;
   transition: color 0.3s;
   padding-bottom: 5px; 
@@ -27,11 +35,11 @@
 }
 
 .MenuItem:hover {
-  color: #807d7d;
+  color: var(--menu-item-hover-color);
 }
 
 
 .MenuItem.ativo {
-  color: #378aa1;
-  border-bottom: 2px solid #30a4c4;
+  color: var(--menu-item-active-color);
+  border-bottom: 2px solid var(--menu-item-active-border-color);
 }
